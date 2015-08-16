@@ -11,7 +11,7 @@ knitr::opts_chunk$set(warning=FALSE)
 ```
 
 ## Loading and preprocessing the data
-Following code reads the data into a variable named data:
+Following code reads the data into a variable named data. No extra processing was needed except changing the date column to a field of type date rather than a string.
 ```{r read_data}
 unzip("activity.zip")
 data<- read.csv("activity.csv")

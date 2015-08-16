@@ -7,7 +7,7 @@ knitr::opts_chunk$set(warning=FALSE)
 ```
 
 ## Loading and preprocessing the data
-Following code reads the data into a variable named data:
+Following code reads the data into a variable named data. No extra processing was needed except changing the date column to a field of type date rather than a string.
 
 ```r
 unzip("activity.zip")
@@ -133,4 +133,4 @@ qplot(interval, steps, data = dataperinterval, geom="line", facets = isWeekend ~
 
 ![](PA1_template_files/figure-html/unnamed-chunk-9-1.png) 
 
-It is apparent that there is a spike in average daily movement during a particular interval during weekdays and then the number of steps goes down but it is not so in the case of weekends.
+It is apparent that there is a spike in average daily movement during a particular interval during weekends and then the number of steps goes down but it is not so in the case of weekdays.
