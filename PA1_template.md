@@ -89,7 +89,7 @@ out <- imputeNA(data, dataperinterval)
 Requireed histogram is ploted by the following code:
 
 ```r
-qplot(date, steps, data = out, geom = "histogram", stat = "identity", main="total number of steps taken each day")
+qplot(date, steps, data = out, geom = "histogram", stat = "identity", main="total number of steps taken each day(after imputing NAs)")
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-6-1.png) 
